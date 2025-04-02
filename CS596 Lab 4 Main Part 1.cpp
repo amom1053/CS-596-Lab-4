@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include <BLEDevice.h>
 
-
 #define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"
 #define SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
 #define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"
@@ -10,7 +9,6 @@
 const int pin = 12;
 // Initializing variable to hold 'off' state at start of program
 bool state = false;
-
 
 class MyCallbacks: public BLECharacteristicCallbacks {
    void onWrite(BLECharacteristic *pCharacteristic) {
@@ -47,7 +45,6 @@ void setup() {
  Serial.println("4- Go to CUSTOM CHARACTERISTIC in CUSTOM SERVICE and write '0' or '1' to turn the LED on or off");
  Serial.println("5- See the magic =)");
 
-
  // Configuring the pin for our blue LED as an output variable
  pinMode(pin, OUTPUT);
  
@@ -74,3 +71,5 @@ void setup() {
 void loop() {
  delay(2000);
 }
+
+
