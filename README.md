@@ -3,6 +3,9 @@
 ## Part A
 YT: https://youtu.be/HeegNY43YSc
 
+## Part B
+YT: https://youtu.be/Oxi_P1f6qfw
+
 Circuit Diagram
 | TTGO | LSM6DS0 | LED |
 |---|---|---|
